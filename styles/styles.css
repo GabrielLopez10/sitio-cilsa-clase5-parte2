@@ -23,9 +23,18 @@ textarea {
     margin-top: 80px;
 }
 
-form, #perfil{
+#perfil{
     height: 50rem;
     margin-top: 150px;
+}
+
+#titulo {
+    height: 5rem;
+    margin-top: 8rem;
+}
+
+form {
+    height: 35rem;
 }
 
 .carousel-container {
@@ -44,3 +53,36 @@ form, #perfil{
 .carousel-indicators [data-bs-target] {
     background-color: #007bff;
 }
+
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  .check-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #82ce34;
+    border-radius: 50%;
+    color: white;
+    font-size: 50px;
+    line-height: 80px;
+    text-align: center;
+  }
+  .modal-body h4 {
+    color: #333;
+    font-weight: 500;
+  }
+  .modal-body p {
+    color: #666;
+  }
+  .btn-success {
+    background-color: #82ce34;
+    border: none;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  .btn-success:hover {
+    background-color: #72b42e;
+  }
