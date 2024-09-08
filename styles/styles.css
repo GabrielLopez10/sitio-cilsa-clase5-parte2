@@ -18,7 +18,7 @@ textarea {
 }
 
 .full-height {
-    height: 50rem;
+    height: 10rem;
     margin-top: 80px;
 }
 
@@ -27,8 +27,8 @@ textarea {
     margin-top: 150px;
 }
 
-#titulo {
-    height: 5rem;
+#titulo, #carousel {
+    height: 6rem;
     margin-top: 8rem;
 }
 
