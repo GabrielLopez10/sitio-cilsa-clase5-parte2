@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --fuente-inter : "Inter", sans-serif;
+    --fuente-inter: "Inter", sans-serif;
 }
 
 * {
@@ -17,17 +17,30 @@ textarea {
     resize: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .full-height {
     height: 10rem;
     margin-top: 80px;
 }
 
-#perfil{
-    height: 50rem;
+#perfil {
+    height: 45rem;
     margin-top: 150px;
 }
 
-#titulo, #carousel {
+#avatar {
+    transition: transform .2s;
+}
+
+#avatar:hover {
+    transform: scale(1.1);
+}
+
+#titulo,
+#carousel {
     height: 6rem;
     margin-top: 8rem;
 }
@@ -41,10 +54,18 @@ form {
     width: 100%;
 }
 
+.carousel-image {
+    height: 700px;
+    border-radius: 60px;
+    object-fit: cover;
+}
+
+
+
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
-   
+
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
@@ -53,12 +74,28 @@ form {
     background-color: #007bff;
 }
 
+.custom-caption {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    color: white;
+
+}
+
+.custom-caption h5, .custom-caption p {
+    margin: 0;
+}
+
+.custom-navbar-img {
+    width: 200px;
+}
+
 .modal-content {
     border-radius: 15px;
     border: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  }
-  .check-icon {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.check-icon {
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -68,20 +105,24 @@ form {
     font-size: 50px;
     line-height: 80px;
     text-align: center;
-  }
-  .modal-body h4 {
+}
+
+.modal-body h4 {
     color: #333;
     font-weight: 500;
-  }
-  .modal-body p {
+}
+
+.modal-body p {
     color: #666;
-  }
-  .btn-success {
+}
+
+.btn-success {
     background-color: #82ce34;
     border: none;
     padding: 10px 0;
     font-size: 18px;
-  }
-  .btn-success:hover {
+}
+
+.btn-success:hover {
     background-color: #72b42e;
-  }
+}
