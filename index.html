@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top  p-3">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,13 +21,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav gap-md-4">
-                        <li class="nav-item">
+                        <a class="navbar-brand" href="#"><img src="assets/images/pagina de perfil banner.jpeg" class="img-thumbnail rounded-circle custom-navbar-img"
+                            alt="pantalla con codigo de programacion" /></a>
+                        <li class="nav-item m-3">
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="perfil.html">Perfil</a>
+                            <a class="nav-link m-3" href="perfil.html">Perfil</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item m-3">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -49,20 +51,28 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100"
-                            alt="Wild Landscape" />
+                        <img src="assets/images/programacion-anteojo.jpg" class="d-block w-100 carousel-image"
+                            alt="imagen de anteojo con pantalla de fondo" />
+                        <div class="carousel-caption custom-caption">
+                            <h5>Imagen de Anteojo con pantalla de fondo</h5>
+                            <p>para CILSA</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100"
-                            alt="Camera" />
+                        <img src="assets/images/programacion-codigo.jpg" class="d-block w-100 carousel-image"
+                            alt="pantalla con codigo de programacion" />
+                        <div class="carousel-caption custom-caption">
+                            <h5>Pantalla con codigo de programación</h5>
+                            <p>para CILSA</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100"
-                            alt="Exotic Fruits" />
-                    </div>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Imagen de prueba</h5>
-                        <p>para CILSA</p>
+                        <img src="assets/images/programacion-notebook.jpg" class="d-block w-100 carousel-image"
+                            alt="programacion en una notebook" />
+                        <div class="carousel-caption custom-caption">
+                            <h5>Programacion en una notebook</h5>
+                            <p>para CILSA</p>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
