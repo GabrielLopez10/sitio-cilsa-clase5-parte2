@@ -1,25 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Form validation
+    // Validacion del formulario
     var form = document.querySelector('.needs-validation');
     
     form.addEventListener('submit', (event) => {
-        event.preventDefault();  // Prevent default submission
+        event.preventDefault();  // Impide el envio del formulario por defecto
         
         if (!form.checkValidity()) {
-            event.stopPropagation();  // Stop form submission if invalid
+            event.stopPropagation();  // Detiene el envio del formulario si es invalido
         } else {
-            // If form is valid, show the modal
+            // Si el formulario es valido, muestra el modal de confirmacion
             var modal = new bootstrap.Modal(document.getElementById('confirmationModal'));
             modal.show();
             
-            // Optionally clear the form fields after showing the modal
+            // Limpiar los campos del formulario despues de mostrar el modal
             form.reset();
             
-            // Remove validation feedback classes after reset
+            // Elimina las clases de feedback de bootstrap despues del reinicio
             form.classList.remove('was-validated');
         }
 
-        // Add Bootstrap validation classes
+        // Añade las clases de feedback de bootstrap por defecto
         form.classList.add('was-validated');
     }, false);
 });
