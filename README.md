@@ -1,0 +1,1 @@
+![encriptador logo](https://res.cloudinary.com/dfzw74nlk/image/upload/v1725914318/rqt9tv65tpk9lywnbnty.jpg)
